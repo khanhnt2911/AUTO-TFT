@@ -2,7 +2,7 @@
 
 import tkinter as tk
 import multiprocessing
-from win32gui import SetWindowLong, GetWindowLong, SetLayeredWindowAttributes
+import win32gui
 from win32con import WS_EX_LAYERED, WS_EX_TRANSPARENT, GWL_EXSTYLE
 import screeninfo
 
@@ -47,10 +47,10 @@ class UI:
 
     def set_clickthrough(self, hwnd: int) -> None:
         """Uses window API function to make the window clickthrough"""
-        styles: int = GetWindowLong(hwnd, GWL_EXSTYLE)
+        styles: int = win32gui.GetWindowLong(hwnd, GWL_EXSTYLE)
         styles: int = WS_EX_LAYERED | WS_EX_TRANSPARENT
-        SetWindowLong(hwnd, GWL_EXSTYLE, styles)
-        SetLayeredWindowAttributes(hwnd, 0, 255, 0x00000001)
+        win32gui.SetWindowLong(hwnd, GWL_EXSTYLE, styles)
+        win32gui.SetLayeredWindowAttributes(hwnd, 0, 255, 0x00000001)
 
     def consume_text(self) -> None:
         """Consumes UI changes from the message queue"""
