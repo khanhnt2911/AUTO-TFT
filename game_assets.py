@@ -2,29 +2,29 @@
 Contains static item & champion data
 """
 
-COMBINED_ITEMS: set[str] = {"BFSword","ChainVest","GiantsBelt","NeedlesslyLargeRod",
-                            "NegatronCloak","RecurveBow","SparringGloves","Spatula",
+COMBINED_ITEMS: set[str] = {"KiếmB.F","GiápLưới","ĐaiKhổngLồ","GậyQuáKhổ",
+                            "ÁoChoàngBạc","NướcMắtNữThần","GăngĐấuTập","XẻngVàng",
                             "TearoftheGoddess","ChallengerEmblem","DemaciaEmblem","IoniaEmblem",
                             "JuggernautEmblem","NoxusEmblem","ShurimaEmblem","SlayerEmblem",
-                            "SorcererEmblem","ArchangelsStaff","Bloodthirster","BlueBuff",
-                            "BrambleVest","ChaliceofPower","Deathblade","DragonsClaw",
-                            "EdgeofNight","GargoyleStoneplate","GiantSlayer","Guardbreaker",
-                            "GuinsoosRageblade","HandofJustice","HextechGunblade","InfinityEdge",
-                            "IonicSpark","JeweledGauntlet","LastWhisper","LocketoftheIronSolari",
-                            "Morellonomicon","ProtectorsVow","Quicksilver","RabadonsDeathcap",
-                            "RapidFirecannon","Redemption","RunaansHurricane","ShroudofStillness",
-                            "SpearofShojin","StatikkShiv","SunfireCape","TacticiansCrown",
-                            "ThiefsGloves","TitansResolve","WarmogsArmor","ZekesHerald",
-                            "Zephyr","ZzRotPortal"}
+                            "SorcererEmblem","ArchangelsStaff","HuyếtKiếm","BùaXanh",
+                            "ÁoChoàngGai","CốcSứcMạnh","KiếmTửThần","VuốtRồng",
+                            "ÁoChoàngBóngTối","ThúTượngThạchGiáp","DiệtKhổngLồ","ChuỳPhảnKích",
+                            "CuồngĐaoGuinsoo","BànTayCôngLý","KiếmSúngHextech","VôCựcKiếm",
+                            "NỏSét","GăngBảoThạch","CungXanh","DâyChuyềnIronSolari",
+                            "QuỷThưMorello","LờiThềHộVệ","ÁoChoàngThủyNgân","MũPhùThủyRabadon",
+                            "ĐạiBácLiênThanh","DâyChuyềnChuộcTội","CuồngCungRunaan","ÁoChoàngTĩnhLặng",
+                            "NgọnGiáoShojin","DaoĐiệnStatikk","ÁoChoàngLửa","VươngMiệnChiếnThuật",
+                            "GăngĐạoTặc","QuyềnNăngKhổngLồ","GiápMáuWarmog","CờLệnhZeke",
+                            "PhongThầnKiếm","ThôngĐạoZz'Rot"}
 
 ELUSIVE_ITEMS: set[str] = {"BastionEmblem","BruiserEmblem","DeadeyeEmblem","FreljordEmblem",
                             "GunnerEmblem","InvokerEmblem","PiltoverEmblem","RogueEmblem",
                             "StrategistEmblem","TargonEmblem","VoidEmblem","ZaunEmblem"}
 
-ORNN_ITEMS: set[str] = {"AnimaVisage", "DeathsDefiance", "EternalWinter",
-                        "GoldCollector", "InfinityForce",
-                        "Manazane", "ObsidianCleaver", "RaduinsSanctum",
-                        "RocketPropelledFist", "ZhonyasParadox"}
+ORNN_ITEMS: set[str] = {"GiápSiêuLinh", "VũĐiệuTửThần", "BăngGiápVĩnhCửu",
+                        "SúngHảiTặc", "TamLuyệnKiếm",
+                        "ThánhKiếmManazane", "RìuNhamTinh", "KhiênTrụRanduin",
+                        "RocketPropelledFist", "ĐồngHồCát"}
 
 ITEMS: set[str] = COMBINED_ITEMS.union(ELUSIVE_ITEMS).union(ORNN_ITEMS)
 

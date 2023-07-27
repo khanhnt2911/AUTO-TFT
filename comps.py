@@ -7,13 +7,13 @@ Items are in camel case and a-Z
 COMP = {
     "Azir": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv"],
+        "items": ["CuồngĐaoGuinsoo","KiếmSúngHextech","DaoĐiệnStatikk"],
         "level": 2,
         "final_comp": True
     },
     "Jarvan IV": {
         "board_position": 26,
-        "items": ["Redemption","DragonsClaw","WarmogsArmor"],
+        "items": ["DâyChuyềnChuộcTội","VuốtRồng","GiápMáuWarmog"],
         "level": 3,
         "final_comp": True
     },
