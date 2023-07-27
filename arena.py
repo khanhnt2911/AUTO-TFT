@@ -57,7 +57,7 @@ class Arena:
         sleep(0.5)
         self.fix_bench_state()
 
-    def have_champion(self) -> Champion | None:
+    def have_champion(self):
         """Checks the bench to see if champion exists"""
         return next(
             (

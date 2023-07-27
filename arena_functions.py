@@ -102,7 +102,7 @@ def bench_occupied_check() -> list:
     return bench_occupied
 
 
-def valid_item(item: str) -> str | None:
+def valid_item(item: str):
     """Checks if the item passed in arg one is valid"""
     return next(
         (

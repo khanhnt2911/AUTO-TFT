@@ -7,13 +7,13 @@ Items are in camel case and a-Z
 COMP = {
     "Azir": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv"],
+        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv","RunaansHurricane","JeweledGauntlet","RapidFirecannon","HandofJustice","InfinityEdge"],
         "level": 2,
         "final_comp": True
     },
     "Jarvan IV": {
         "board_position": 26,
-        "items": ["Redemption","DragonsClaw","WarmogsArmor"],
+        "items": ["Redemption","DragonsClaw","WarmogsArmor","GargoyleStoneplate","ProtectorsVow","BrambleVest","SunfireCape"],
         "level": 3,
         "final_comp": True
     },
@@ -49,7 +49,7 @@ COMP = {
     },
     "Nasus": {
         "board_position": 27,
-        "items": [],
+        "items": ["ThiefsGloves"],
         "level": 2,
         "final_comp": True
     }
