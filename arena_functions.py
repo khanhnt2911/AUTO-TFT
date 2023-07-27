@@ -18,7 +18,7 @@ def get_level() -> int:
     """Returns the level for the tactician"""
     try:
         response = requests.get(
-            'https://127.0.0.1:2999/liveclientdata/allgamedata', timeout=10, verify=False)
+            'https://127.0.0.1:2999/liveclientdata/allgamedata', timeout=1, verify=False)
         return int(response.json()['activePlayer']['level'])
     except (requests.exceptions.ConnectionError, KeyError):
         return 1
@@ -28,7 +28,7 @@ def get_health() -> int:
     """Returns the health for the tactician"""
     try:
         response = requests.get(
-            'https://127.0.0.1:2999/liveclientdata/allgamedata', timeout=10, verify=False)
+            'https://127.0.0.1:2999/liveclientdata/allgamedata', timeout=1, verify=False)
         return int(response.json()['activePlayer']['championStats']["currentHealth"])
     except (requests.exceptions.ConnectionError, KeyError):
         return 100
