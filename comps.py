@@ -7,7 +7,7 @@ Items are in camel case and a-Z
 COMP = {
     "Azir": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv"],
+        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv","RunaansHurricane","RapidFirecannon"],
         "level": 2,
         "final_comp": True
     },
