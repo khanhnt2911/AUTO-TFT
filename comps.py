@@ -5,52 +5,52 @@ Items are in camel case and a-Z
 """
 
 COMP = {
-    "Azir": {
+    "Kayle": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","HextechGunblade","StatikkShiv","JeweledGauntlet","HandofJustice","GiantSlayer"],
+        "items": ["GuinsoosRageblade","GuinsoosRageblade"],
         "level": 3,
         "final_comp": True
     },
-    "Jarvan IV": {
-        "board_position": 26,
-        "items": ["SunfireCape","WarmogsArmor","GargoyleStoneplate","ProtectorsVow"],
-        "level": 3,
-        "final_comp": True
-    },
-    "Taliyah": {
-        "board_position": 0,
-        "items": [],
-        "level": 2,
-        "final_comp": True
-    },
-    "Teemo": {
-        "board_position": 4,
-        "items": [],
-        "level": 2,
-        "final_comp": True
-    },
-    "Swain": {
+    "Fiora": {
         "board_position": 25,
-        "items": [],
+        "items": ["Bloodthirster","TitansResolve"],
+        "level": 3,
+        "final_comp": True
+    },
+    "JarvanIV": {
+        "board_position": 26,
+        "items": ["ProtectorsVow","SunfireCape"],
         "level": 2,
         "final_comp": True
     },
-    "Garen": {
+    "Shen": {
+        "board_position": 27,
+        "items": ["Redemption"],
+        "level": 2,
+        "final_comp": True
+    },
+    "Poppy": {
         "board_position": 24,
         "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Lux": {
-        "board_position": 5,
-        "items": ["BlueBuff","JeweledGauntlet"],
-        "level": 3,
+    "Galio": {
+        "board_position": 23,
+        "items": [],
+        "level": 2,
         "final_comp": True
     },
-    "Nasus": {
-        "board_position": 27,
-        "items": ["Bloodthirster","Redemption"],
-        "level": 3,
+    "Quinn": {
+        "board_position": 0,
+        "items": [],
+        "level": 2,
+        "final_comp": True
+    },
+    "Sona": {
+        "board_position": 5,
+        "items": ["SpearofShojin"],
+        "level": 2,
         "final_comp": True
     }
 }
