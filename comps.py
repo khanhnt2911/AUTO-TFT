@@ -5,54 +5,61 @@ Items are in camel case and a-Z
 """
 
 COMP = {
-    "Kayle": {
+    "Xayah": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","GuinsoosRageblade"],
+        "items": ["GuinsoosRageblade","Guardbreaker","LastWhisper","StatikkShiv","NashorsTooth","GiantSlayer","InfinityEdge","HandofJustice"],
         "level": 3,
-        "final_comp": True
-    },
-    "Fiora": {
-        "board_position": 25,
-        "items": ["Bloodthirster","TitansResolve"],
-        "level": 3,
-        "final_comp": True
-    },
-    "JarvanIV": {
-        "board_position": 26,
-        "items": ["ProtectorsVow","SunfireCape"],
-        "level": 2,
         "final_comp": True
     },
     "Shen": {
-        "board_position": 27,
-        "items": ["Redemption"],
+        "board_position": 26,
+        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
+        "level": 3,
+        "final_comp": True
+    },
+    "Jhin": {
+        "board_position": 0,
+        "items": ["InfinityEdge"],
+        "level": 3,
+        "final_comp": True
+    },
+    "Ashe": {
+        "board_position": 1,
+        "items": [],
+        "level": 3,
+        "final_comp": True
+    },
+    "Karma": {
+        "board_position": 2,
+        "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Poppy": {
+    "Irelia": {
+        "board_position": 23,
+        "items": [],
+        "level": 3,
+        "final_comp": True
+    },
+    "Darius": {
         "board_position": 24,
         "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Galio": {
-        "board_position": 23,
-        "items": [],
+    "Sett": {
+        "board_position": 25,
+        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
         "level": 2,
         "final_comp": True
     },
-    "Quinn": {
-        "board_position": 0,
-        "items": [],
-        "level": 2,
-        "final_comp": True
-    },
-    "Sona": {
+    "Ahri": {
         "board_position": 5,
-        "items": ["SpearofShojin"],
-        "level": 2,
+        "items": [],
+        "level": 3,
         "final_comp": True
-    }
+    },
+    
 }
 
 # No logic for certain augments meaning the bot won't know what to do if they are included in here
