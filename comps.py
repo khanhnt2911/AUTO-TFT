@@ -7,59 +7,76 @@ Items are in camel case and a-Z
 COMP = {
     "Xayah": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","Guardbreaker","LastWhisper","StatikkShiv","NashorsTooth","GiantSlayer","InfinityEdge","HandofJustice"],
+        "items": ["GuinsoosRageblade","Guardbreaker","LastWhisper"],
+        "level": 3,
+        "final_comp": True
+    },
+    "Nilah": {
+        "board_position": 18,
+        "items": ["Bloodthirster","RapidFirecannon","Deathblade"],
         "level": 3,
         "final_comp": True
     },
     "Shen": {
         "board_position": 26,
-        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
-        "level": 3,
+        "items": ["SunfireCape","WarmogsArmor","GargoyleStoneplate"],
+        "level": 2,
         "final_comp": True
     },
-    "Jhin": {
-        "board_position": 0,
-        "items": ["InfinityEdge"],
-        "level": 3,
-        "final_comp": True
-    },
-    "Ashe": {
-        "board_position": 1,
-        "items": [],
-        "level": 3,
-        "final_comp": True
-    },
-    "Karma": {
-        "board_position": 2,
+    "Sejuani": {
+        "board_position": 27,
         "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Irelia": {
-        "board_position": 23,
-        "items": [],
-        "level": 3,
-        "final_comp": True
-    },
-    "Darius": {
+    "Neeko": {
         "board_position": 24,
         "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Sett": {
-        "board_position": 25,
-        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
+    "Ashe": {
+        "board_position": 4,
+        "items": [],
         "level": 2,
         "final_comp": True
     },
-    "Ahri": {
+    "Jhin": {
         "board_position": 5,
         "items": [],
-        "level": 3,
+        "level": 2,
         "final_comp": True
     },
-    
+    "Milio": {
+        "board_position": 0,
+        "items": [],
+        "level": 2,
+        "final_comp": True
+    },
+    "Irelia": {
+        "board_position": 25,
+        "items": ["SunfireCape","WarmogsArmor","GargoyleStoneplate"],
+        "level": 2,
+        "final_comp": False
+    },
+    "Jinx":{
+        "board_position": 1,
+        "items": ["GuinsoosRageblade","Guardbreaker","LastWhisper"],
+        "level": 2,
+        "final_comp": False
+    },
+    "Sett":{
+        "board_position": 23,
+        "items": ["GargoyleStoneplate","WarmogsArmor","SunfireCape"],
+        "level": 2,
+        "final_comp": False
+    },
+    "Warwick":{
+        "board_position": 17,
+        "items": [],
+        "level": 2,
+        "final_comp": False
+    }
 }
 
 # No logic for certain augments meaning the bot won't know what to do if they are included in here
