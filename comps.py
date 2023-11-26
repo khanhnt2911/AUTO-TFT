@@ -2,120 +2,95 @@
 Team composition used by the bot
 Comps come from https://tftactics.gg/tierlist/team-comps
 Items are in camel case and a-Z
+The "headliner" tag represents a trait from bottom to top.
+Set to True if you want it in your team.
+Only final comp champion will become headliner and need to set the corresponding 'headliner' tag to True.
+e.g. Only want "Sentinel" Ekko, set it to "headliner": [True, False, False]
+e.g.2 want either "Sentinel" or "True Damage" Ekko, set it to "headliner": [True, False, True]
 """
 
-# COMP = {
-#     "Kayle": {
-#         "board_position": 6,
-#         "items": ["GuinsoosRageblade","GuinsoosRageblade"],
-#         "level": 3,
-#         "final_comp": True
-#     },
-#     "Fiora": {
-#         "board_position": 25,
-#         "items": ["Bloodthirster","TitansResolve"],
-#         "level": 3,
-#         "final_comp": True
-#     },
-#     "JarvanIV": {
-#         "board_position": 26,
-#         "items": ["ProtectorsVow","SunfireCape"],
-#         "level": 2,
-#         "final_comp": True
-#     },
-#     "Shen": {
-#         "board_position": 27,
-#         "items": ["Redemption"],
-#         "level": 2,
-#         "final_comp": True
-#     },
-#     "Poppy": {
-#         "board_position": 24,
-#         "items": [],
-#         "level": 2,
-#         "final_comp": True
-#     },
-#     "Galio": {
-#         "board_position": 23,
-#         "items": [],
-#         "level": 2,
-#         "final_comp": True
-#     },
-#     "Quinn": {
-#         "board_position": 0,
-#         "items": [],
-#         "level": 2,
-#         "final_comp": True
-#     },
-#     "Sona": {
-#         "board_position": 5,
-#         "items": ["SpearofShojin"],
-#         "level": 2,
-#         "final_comp": True
-#     }
-# }
-
 COMP = {
-    "Xayah": {
+    "MissFortune": {
         "board_position": 6,
-        "items": ["GuinsoosRageblade","Guardbreaker","LastWhisper","StatikkShiv","NashorsTooth","GiantSlayer","InfinityEdge","HandofJustice"],
-        "level": 3,
-        "final_comp": True
-    },
-    "Shen": {
-        "board_position": 26,
-        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
-        "level": 3,
-        "final_comp": True
-    },
-    "Jhin": {
-        "board_position": 0,
-        "items": ["InfinityEdge"],
-        "level": 3,
-        "final_comp": True
-    },
-    "Ashe": {
-        "board_position": 1,
-        "items": [],
-        "level": 3,
-        "final_comp": True
-    },
-    "Karma": {
-        "board_position": 2,
-        "items": [],
+        "items": ["Deathblade", "LastWhisper", "GuinsoosRageblade"],
         "level": 2,
-        "final_comp": True
+        "final_comp": True,
+        "headliner": [False, True, False]
     },
-    "Irelia": {
-        "board_position": 23,
-        "items": [],
-        "level": 3,
-        "final_comp": True
-    },
-    "Darius": {
+    "Neeko": {
         "board_position": 24,
-        "items": [],
-        "level": 2,
-        "final_comp": True
+        "items": ["WarmogsArmor", "BrambleVest", "DragonsClaw"],
+        "level": 3,
+        "final_comp": True,
+        "headliner": [False, False, False]
     },
-    "Sett": {
-        "board_position": 25,
-        "items": ["Redemption","SunfireCape","WarmogsArmor","DragonsClaw","GargoyleStoneplate","Evenshroud","ProtectorsVow","AdaptiveHelm" ],
+    "Lucian": {
+        "board_position": 3,
+        "items": ["StatikkShiv"],
         "level": 2,
-        "final_comp": True
+        "final_comp": True,
+        "headliner": [False, True, False]
     },
-    "Ahri": {
+    "Kennen": {
+        "board_position": 17,
+        "items": ["Evenshroud"],
+        "level": 2,
+        "final_comp": True,
+        "headliner": [False, False, False]
+    },
+    "Ekko": {
         "board_position": 5,
         "items": [],
-        "level": 3,
-        "final_comp": True
+        "level": 2,
+        "final_comp": True,
+        "headliner": [False, False, False]
     },
-    
+    "Bard": {
+        "board_position": 0,
+        "items": [],
+        "level": 2,
+        "final_comp": True,
+        "headliner": [False, True, False]
+    },
+    "KaiSa": {
+        "board_position": 1,
+        "items": [],
+        "level": 2,
+        "final_comp": True,
+        "headliner": [False, False, False]
+    },
+    "Lillia": {
+        "board_position": 16,
+        "items": [],
+        "level": 2,
+        "final_comp": True,
+        "headliner": [False, False, False]
+    },
+    "KSante": {
+        "board_position": 25,
+        "items": [],
+        "level": 2,
+        "final_comp": False,
+        "headliner": [False, False, False]
+    },
+    "Corki": {
+        "board_position": 7,
+        "items": [],
+        "level": 2,
+        "final_comp": False,
+        "headliner": [False, False, False]
+    }
 }
 
 # No logic for certain augments meaning the bot won't know what to do if they are included in here
 # (Anything that changes gameplay or adds something to the bench).
 AUGMENTS: list[str] = [
+    "That's Jazz Baby!",
+    "You Have My Bow",
+    "Blistering Strikes",
+    "Buried Treasures",
+    "Switching Gears",
+    "Caretaker's Favor",
     "Gotta Go Fast",
     "Tiny Power",
     "Shurima's Legacy",
@@ -127,7 +102,7 @@ AUGMENTS: list[str] = [
     "Big Friend",
     "First Aid Kit",
     "Stand United",
-    "Urf's Grab Bag",
+    "Grab Bag",
     "Component Grab Bag",
     "Thrill of the Hunt",
     "Better Together",
@@ -159,16 +134,16 @@ AUGMENTS: list[str] = [
 ]
 
 
-def champions_to_buy() -> list:
+def champions_to_buy() -> dict:
     """Creates a list of champions to buy during the game"""
-    champs_to_buy: list = []
+    champs_to_buy: dict = {}
     for champion, champion_data in COMP.items():
         if champion_data["level"] == 1:
-            champs_to_buy.append(champion)
+            champs_to_buy[champion] = 1
         elif champion_data["level"] == 2:
-            champs_to_buy.extend([champion] * 3)
+            champs_to_buy[champion] = 3
         elif champion_data["level"] == 3:
-            champs_to_buy.extend([champion] * 9)
+            champs_to_buy[champion] = 9
         else:
             raise ValueError("Comps.py | Champion level must be a valid level (1-3)")
     return champs_to_buy
@@ -180,3 +155,12 @@ def get_unknown_slots() -> list:
     for _, champion_data in COMP.items():
         container.append(champion_data["board_position"])
     return [n for n in range(27) if n not in container]
+
+
+def get_headliner_tag(name: str) -> int:
+    """Return what trait of specify champion can become headliner"""
+    return (
+        int(COMP[name]["headliner"][0])
+        + int(COMP[name]["headliner"][1]) * 2
+        + int(COMP[name]["headliner"][2]) * 4
+    )

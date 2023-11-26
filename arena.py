@@ -12,6 +12,7 @@ import comps
 import ocr
 import game_functions
 import arena_functions
+from typing import Optional
 
 
 class Arena:
@@ -126,7 +127,7 @@ class Arena:
         """Moves champions to the board"""
         self.level: int = arena_functions.get_level()
         while self.level > self.board_size:
-            champion: Champion | None = self.have_champion()
+            champion: Optional[Champion] = self.have_champion()
             if champion is not None:
                 self.move_known(champion)
             elif self.unknown_in_bench():
@@ -160,7 +161,7 @@ class Arena:
 
     def replace_unknown(self) -> None:
         """Replaces unknown champion"""
-        champion: Champion | None = self.have_champion()
+        champion: Optional[Champion] = self.have_champion()
         if len(self.board_unknown) > 0 and champion is not None:
             mk_functions.press_e(screen_coords.BOARD_LOC[self.unknown_slots[len(
                 self.board_unknown) - 1]].get_coords())
